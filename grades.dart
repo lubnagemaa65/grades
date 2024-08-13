@@ -39,8 +39,14 @@ void main() {
     message = 'Needs improvement.';
   }
 
-  // Display the list of grades the student received
-  print('\nStudent\'s Grades: $grades');
-  print('Average Grade: ${average.toStringAsFixed(2)}');
+  // Display the average grade and the corresponding message
+  print('\nAverage Grade: ${average.toStringAsFixed(2)}');
   print('Message: $message');
+
+
+ // Display each grade separately
+  print('\nEach Grade Separately:');
+  for (int j = 0; j < grades.length; j++) {
+    print('Grade ${j + 1}: ${grades[j]}');
+  }
 }
